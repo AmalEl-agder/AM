@@ -19,7 +19,7 @@ class Doctor :
 
     def Nextp(self,newp): # method to let the  next patient be the current patient and calculates the time he would take at the doctor's
         self.currentpatient = newp
-        self.timeRemaining = newp.getages()/5
+        self.timeRemaining = newp.getages()//5
 
 class Patient :
     def __init__(self, arrival):  #patient constructor with arrival time argument
